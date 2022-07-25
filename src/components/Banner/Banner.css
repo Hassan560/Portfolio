@@ -1,0 +1,36 @@
+.banner_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+}
+
+.banner_btn>button {
+    background-color: #FD6C4D;
+    padding: 10px 50px;
+    border: 0px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.banner_rightSide>img {
+    width: 400px;
+    z-index: -2;
+}
+
+.banner_leftSide {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.banner_leftSide>h2 {
+    word-wrap: break-word;
+    font-family: ui-sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.banner_btn {
+    margin-top: 15px;
+}

@@ -1,0 +1,115 @@
+@media screen and (max-width: 1000px) {
+    .personal_container {
+        padding: 0px 120px 0px 80px !important;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    
+    .banner_leftSide>h2 {
+        font-size: 20px;
+    }
+
+    .banner_rightSide>img {
+        width: 350px !important;
+    }
+
+    .personal_container {
+        padding: 0px 80px 0px 80px !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav>ul {
+        width: 350px !important;
+    }
+}
+
+@media screen and (max-width: 819px) {
+    
+    .Education_content>h2,
+    .Education_content2>h2,
+    .Work_rightSide>h2 {
+        font-size: 23px !important;
+    }
+
+    .Work_container {
+        padding-right: 76px !important;
+    }
+
+    .Skills_container {
+        padding-right: 67px !important;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .banner_container {
+        flex-direction: column;
+        padding-top: 40px !important;
+    }
+
+    .banner_rightSide>img {
+        width: 400px !important;
+    }
+
+    .banner_leftSide>h2 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .banner_leftSide {
+        text-align: center;
+    }
+
+    .banner_container::before {
+        height: 600px !important;
+    }
+
+    .Education_container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Work_container {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0px !important;
+    }
+
+    .Skills_container {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0px !important;
+    }
+
+    .personal_container {
+        text-align: center;
+    }
+
+    .Education_rightSide,
+    .Work_rightSide {
+        margin-top: 15px;
+    }
+    .Skills_rightSide{
+        text-align: center !important;
+    }
+}
+
+@media screen and (max-width: 674px) {
+    .nav {
+        display: none;
+    }
+
+    .header_container {
+        padding: 0px 30px;
+    }
+
+    .banner_container {
+        padding: 30px 30px !important;
+    }
+    .personal_container{
+        padding: 0px 30px !important;
+    } 
+    .Skills_leftSide{
+    margin-top: 10px
+    }
+}

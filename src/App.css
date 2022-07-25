@@ -1,0 +1,27 @@
+/* .navbar {
+    background-color: aqua;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: 80px;
+    z-index: 999;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.navbar.active {
+    background-color: black;
+} */
+
+.App {
+    background: rgb(7, 3, 20);
+    background: linear-gradient(140deg, rgba(7, 3, 20, 1) 0%, rgba(21, 11, 42, 1) 26%, rgba(51, 28, 90, 1) 49%, rgba(169, 102, 211, 1) 100%);
+    height: 100%;
+}
+
+/* 
+.app2 {
+    background: rgb(55, 30, 94);
+    background: linear-gradient(132deg, rgba(55, 30, 94, 0.9823588709677419) 0%, rgba(11, 6, 27, 1) 31%, rgba(11, 6, 27, 1) 100%);
+    height: 450px;
+}  */

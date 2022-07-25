@@ -1,0 +1,11 @@
+.nav>ul {
+    width: 450px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav>ul>li {
+    cursor: pointer;
+    text-transform: uppercase;
+}

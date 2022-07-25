@@ -1,0 +1,94 @@
+.personal_container {
+    margin-top: 100px;
+    padding: 0px 195px 0px 80px;
+    word-wrap: break-word;
+}
+
+.Education_container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.Education_rightSide {
+    line-height: 30px;
+}
+
+.Work_container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 83px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.Work_rightSide {
+    line-height: 30px;
+}
+
+.Skills_container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 115px;
+}
+
+.Skills_leftSide {
+    line-height: 30px;
+}
+
+.Education_leftSide>hr,
+.Work_leftSide>hr,
+.Skills_rightSide>hr {
+    border-color: #FD6C4D;
+    border-top-width: 3px;
+}
+
+.Education_content>h2,
+.Education_content2>h2,
+.Work_rightSide>h2 {
+    color: #FD6C4D;
+    font-size: 26px;
+    letter-spacing: 1px;
+    word-wrap: break-word;
+}
+
+.Education_content>p,
+.Education_content2>p,
+.Work_rightSide>p,
+.Skills_content>p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #ffffff9c;
+}
+
+.Education_content {
+    margin-bottom: 25px;
+}
+
+.Skills_content2 {
+    margin-top: 20px;
+}
+
+.Reactjs,
+.Redux,
+.Javascript,
+.Firebase,
+.Mern {
+    background-color: #c1b7cd;
+}
+
+.Reactjs_content,
+.Redux_content,
+.Javascript_content,
+.Mern_content,
+.Firebase_content {
+    background-color: #FD6C4D;
+    width: 60%;
+    padding: 1.2rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.Skills_content{
+    overflow: hidden;
+}

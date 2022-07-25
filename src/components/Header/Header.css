@@ -1,0 +1,27 @@
+.head {
+    height: 70px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    transition: all;
+    transition-duration: 450ms;
+}
+
+.head.active {
+    background: rgb(95, 50, 116);
+    background: linear-gradient(132deg, rgba(95, 50, 116, 1) 0%, rgba(30, 18, 46, 1) 100%);
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+    flex-wrap: wrap;
+    height: 70px;
+}
+
+.header_container_head {
+    cursor: pointer;
+}
