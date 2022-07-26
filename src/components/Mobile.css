@@ -112,4 +112,7 @@
     .Skills_leftSide{
     margin-top: 10px
     }
+    .Products_container{
+        padding: 0px 20px !important;
+    }
 }

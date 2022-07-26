@@ -86,3 +86,14 @@ export const fadeAnimation = {
         transition: { duration: 0.5 },
     },
 }
+
+export const productsAnimation = {
+    hidden: {
+        opacity: 0
+    },
+    visible: {
+        opacity: 1,
+        transition: { duration: 1, ease: "easeOut" },
+    }
+
+}
