@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 // material ui
 import { Button, TextField } from '@mui/material'
 
+import { styled } from '@mui/material/styles'
+
 // emailjs
 import emailjs from '@emailjs/browser'
 
@@ -10,11 +12,37 @@ import emailjs from '@emailjs/browser'
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
-// mobile css
-import '../Mobile.css'
 
-// contact css
-import './Contact.css'
+// textfield css
+const CssTextField = styled(TextField)({
+    '& label.Mui-focused': {
+        color: '#FD6C4D',
+    },
+    '& .MuiInput-underline:after': {
+        borderBottomColor: '#FD6C4D',
+    },
+    '& .MuiInputLabel-root': {
+        color: 'white'
+    },
+    '& .MuiOutlinedInput-root': {
+        '& fieldset': {
+            borderColor: '#FD6C4D',
+        },
+        '&:hover fieldset': {
+            borderColor: '#FD6C4D',
+        },
+        '&.Mui-focused fieldset': {
+            borderColor: '#FD6C4D',
+        },
+        '& input': {
+            color: 'white'
+        },
+        '& textarea': {
+            color: 'white'
+        },
+    },
+});
+
 
 const ContactForm = () => {
 
@@ -61,31 +89,27 @@ const ContactForm = () => {
 
     return (
         <form autoComplete='off' onSubmit={submitForm}>
-            <TextField
+            <CssTextField
                 type='text'
+                label="Name"
                 name='name'
-                required
                 value={userData.name}
                 onChange={inputValue}
-                className='text'
-                label="Name"
-                variant="outlined" />
-            <TextField
+                required />
+            <CssTextField
                 type='email'
+                label="Email"
                 name='email'
-                required
                 value={userData.email}
                 onChange={inputValue}
-                label="Email"
-                variant="outlined" />
-            <TextField
+                required />
+            <CssTextField
                 multiline
+                label="Message"
                 name='message'
-                required
                 value={userData.message}
                 onChange={inputValue}
-                label="Message"
-                variant="outlined" />
+                required />
             <Button
                 type="submit"
                 style={{ backgroundColor: '#FD6C4D', color: 'white', fontWeight: 'bold' }}>{loading ? 'loading...' : 'Submit Form'}</Button>
