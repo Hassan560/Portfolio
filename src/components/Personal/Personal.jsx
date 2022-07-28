@@ -1,15 +1,19 @@
 import React from 'react'
 
-
-import { motion } from 'framer-motion'
-
-import { titleAnimation, reactAnimation, reduxAnimation, javascriptAnimation, firebaseAnimation, mernAnimation } from '../Animation'
-
+// components
 import { useScroll } from '../useScroll'
 
-import './Personal.css'
+// framer motion
+import { motion } from 'framer-motion'
 
+// animation
+import { titleAnimation, reactAnimation, reduxAnimation, javascriptAnimation, firebaseAnimation, mernAnimation } from '../Animation'
+
+// mobile css
 import '../Mobile.css'
+
+// personal css
+import './Personal.css'
 
 const Personal = () => {
 
@@ -38,7 +42,7 @@ const Personal = () => {
             <motion.p
               variants={titleAnimation}
               initial='hidden'
-              animate={controls}>Matriculation.Nov 2019</motion.p>
+              animate={controls}>Matriculation.May 2018</motion.p>
           </div>
           <div className='Education_content2'>
             <motion.h2
@@ -48,7 +52,7 @@ const Personal = () => {
             <motion.p
               variants={titleAnimation}
               initial='hidden'
-              animate={controls}>Intermediate.Nov 2019</motion.p>
+              animate={controls}>Intermediate.Aug 2020</motion.p>
           </div>
         </div>
       </div>

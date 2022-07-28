@@ -1,5 +1,9 @@
 import React from 'react'
+
+//react scroll
 import { Link } from 'react-scroll'
+
+// data
 import { navigation } from '../../Data'
 
 // motion framer
@@ -7,6 +11,8 @@ import { motion } from 'framer-motion'
 
 // mobile css
 import '../Mobile.css'
+
+// nav css
 import './Nav.css'
 
 

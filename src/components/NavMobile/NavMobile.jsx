@@ -1,68 +1,60 @@
 import React, { useState } from 'react'
 
-import './NavMobile.css'
+// react icons
+import { HiMenuAlt3, HiOutlineX } from 'react-icons/hi'
 
+// data
+import { navigation } from '../../Data'
 
-import { motion } from 'framer-motion'
-
+// react scroll
 import { Link } from 'react-scroll'
 
-import { HiMenuAlt3 } from "react-icons/hi";
-import { HiOutlineX } from "react-icons/hi";
+// framer motion
+import { motion } from 'framer-motion'
 
-
-// import { menuVariants } from '../Animation'
+// mobile css
+import './NavMobile.css'
 
 const NavMobile = () => {
-  const [isOpen, setIsOpen] = useState(false)
 
-  const menuVariants = {
-    hidden: {
-      scale: 0
-    },
-    visible: {
-      scale: 180,
-      transition: {
-        type: 'spring',
-        stiffness: 180,
-        damping: 60,
-      }
-    }
+  const [sideBar, setSideBar] = useState(false)
+
+  const showSideBar = () => {
+    setSideBar(!sideBar)
   }
-  const ulVariants = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-      transition: {
-        delay: 0.1
-      }
-    }
-  }
+
   return (
-    <div className="navmobile">
-      {/* menu icon */}
-      <div onClick={() => setIsOpen(true)} style={{ cursor: 'pointer' }}>
+    <div className='navmobile'>
+      <div className='menu_bar' onClick={showSideBar}>
         <HiMenuAlt3 size={35} />
       </div>
-      {/* circle */}
-      <motion.div
-        variants={menuVariants}
-        initial="hidden"
-        animate={isOpen ? 'visible' : 'hidden'}
-        style={{ width: '16px', height: "16px", backgroundColor: 'aqua', position: 'fixed', top: 0, right: 0, borderRadius: 9999 }}
-      >
-      </motion.div>
-      <motion.ul
-        variants={ulVariants}
-        initial='hidden'
-        animate={isOpen ? 'visible' : ''}
-
-  >
-      </motion.ul>
-      <div onClick={() => setIsOpen(false)} style={{ cursor: 'pointer', position: 'absolute', top: 8, right: 8 }}>
-        <HiOutlineX size={35} />
+      <div className={sideBar ? 'nav_menu active' : 'nav_menu'}>
+        <ul className='nav_menu_items' onClick={showSideBar}>
+          <li className='navbar_toggle' >
+            <HiOutlineX size={35} />
+          </li>
+          {
+            navigation.map((elem, index) => (
+              <motion.li
+                whileHover={{ scale: 1.3, color: '#fd6c4d' }}
+                whileTap={{ scale: 1.3 }}
+                transition={{ type: 'spring', stiffness: 300 }}
+                key={index} className="nav_text">
+                <Link
+                  onClick={showSideBar}
+                  to={elem.href}
+                  activeClass='active'
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                  className='transition-all duration-300'>
+                  {elem.name}
+                </Link>
+              </motion.li>
+            ))
+          }
+        </ul>
       </div>
     </div>
   )

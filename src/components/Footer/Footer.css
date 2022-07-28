@@ -1,0 +1,16 @@
+.Footer_container{
+    padding: 10px 80px;
+}
+.Footer_social{
+    text-align: center;
+}
+.Footer_content{
+    padding-top: 10px;
+    text-align: center;
+}
+.Footer_content > span{
+    color: #FD6C4D;
+}
+.social > a{
+    padding: 0px 20px;
+}

@@ -1,0 +1,85 @@
+.Contact_container {
+    padding: 0px 80px;
+}
+
+.Contact_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.Contact_heading {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.Contact_rightside>img {
+    width: 400px;
+}
+
+.Contact_leftside>form {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    width: 400px;
+}
+
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+    border-color: white !important;
+}
+
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+    color: white !important;
+}
+
+.css-wgai2y-MuiFormLabel-asterisk {
+    color: red;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border-color: #FD6C4D !important;
+}
+
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #FD6C4D !important;
+}
+
+.css-1ftyaf0>span {
+    color: #FD6C4D !important;
+}
+
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: #FD6C4D !important;
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input,
+.css-1sqnrkk-MuiInputBase-input-MuiOutlinedInput-input {
+    color: white !important;
+}
+
+.Toastify__toast-theme--light {
+    background: black !important;
+}
+
+
+/* contact details */
+
+.Contact_details {
+    padding: 60px 80px;
+}
+
+.Contact_details_head {
+    letter-spacing: 2px;
+}
+
+.Contact_details_content {
+    padding-top: 20px;
+}
+
+.Contact_details_content>h3 {
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #ffffffb0;
+    word-wrap: break-word;
+}

@@ -46,7 +46,7 @@ export const mernAnimation = {
         width: 0,
     },
     visible: {
-        width: "65%",
+        width: "50%",
         transition: { duration: 0.75, ease: "easeOut" },
     }
 }
@@ -64,7 +64,7 @@ export const reduxAnimation = {
         width: 0,
     },
     visible: {
-        width: "70%",
+        width: "60%",
         transition: { duration: 0.75, ease: "easeOut" },
     }
 }

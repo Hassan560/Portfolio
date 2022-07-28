@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react'
 
-import './Header.css'
-
 // components
 import Nav from '../Nav/Nav'
 import NavMobile from '../NavMobile/NavMobile'
+
+// react scroll
 import { Link } from 'react-scroll'
+
+// headercss
+import './Header.css'
 
 const Header = () => {
     // changing navbar color state 

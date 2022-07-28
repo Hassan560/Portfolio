@@ -1,6 +1,5 @@
 .personal_container {
-    margin-top: 100px;
-    padding: 0px 195px 0px 80px;
+    padding: 60px 195px 0px 80px;
     word-wrap: break-word;
 }
 
@@ -89,6 +88,7 @@
     margin-bottom: 20px;
     margin-top: 10px;
 }
-.Skills_content{
+
+.Skills_content {
     overflow: hidden;
 }

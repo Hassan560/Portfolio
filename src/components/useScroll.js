@@ -1,4 +1,4 @@
-
+//framer motion
 import { useAnimation } from "framer-motion";
 
 import { useInView } from 'react-intersection-observer';
