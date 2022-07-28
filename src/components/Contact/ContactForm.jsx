@@ -10,6 +10,12 @@ import emailjs from '@emailjs/browser'
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
+// mobile css
+import '../Mobile.css'
+
+// contact css
+import './Contact.css'
+
 const ContactForm = () => {
 
     // loading state
